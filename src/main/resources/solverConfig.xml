@@ -1,0 +1,26 @@
+<solver>
+    <solutionClass>opta.KnapsackSolution</solutionClass>
+    <entityClass>opta.Ingot</entityClass>
+    <scoreDirectorFactory>
+        <scoreDrl>constraints.drl</scoreDrl>
+    </scoreDirectorFactory>
+<!--    <constructionHeuristic/>-->
+    <moveThreadCount>12</moveThreadCount>
+    <exhaustiveSearch>
+        <exhaustiveSearchType>BRANCH_AND_BOUND</exhaustiveSearchType>
+        <nodeExplorationType>DEPTH_FIRST</nodeExplorationType>
+    </exhaustiveSearch>
+<!--    <exhaustiveSearch>-->
+<!--        <exhaustiveSearchType>BRUTE_FORCE</exhaustiveSearchType>-->
+<!--    </exhaustiveSearch>-->
+<!--    <localSearch>-->
+<!--        <unionMoveSelector>-->
+<!--            <changeMoveSelector/>-->
+<!--            <swapMoveSelector/>-->
+<!--            &lt;!&ndash; To escape the local optimum in knapsack , add sub pillar swap moves. &ndash;&gt;-->
+<!--            <pillarSwapMoveSelector>-->
+<!--                <subPillarType>ALL</subPillarType>-->
+<!--            </pillarSwapMoveSelector>-->
+<!--        </unionMoveSelector>-->
+<!--    </localSearch>-->
+</solver>
